@@ -1,6 +1,8 @@
 # adversarial-review
 
-An agent skill for a **source-verified merge review**. It does not trust a "done" report or a green test suite. It reads the changed code, runs independent review channels, and ends in a **GO / NO-GO** for merge.
+> **Agent Harness** — a merge-review harness for Cursor and Claude Code.
+
+A **source-verified merge-review harness** that does not trust a "done" report or a green test suite. It reads the changed code, runs independent review channels in parallel, and ends in a **GO / NO-GO** for merge.
 
 Compatible with **Claude Code** and **Cursor** (both use a `SKILL.md` skill folder).
 
@@ -93,3 +95,16 @@ adversarial-review/
 ├── SKILL.md    # Skill metadata + full review procedure
 └── README.md   # This file
 ```
+
+## Agent Harness collection
+
+Part of the **Agent Harness** suite by [@Jayant2907](https://github.com/Jayant2907) — installable skills that wrap structured agent workflows (review harnesses, QA harnesses, impact sweeps) for Cursor and Claude Code.
+
+| Harness | Role |
+|---|---|
+| [adversarial-review](https://github.com/Jayant2907/adversarial-review) | Merge-review harness (this repo) |
+| [p-code-review](https://github.com/Jayant2907/p-code-review) | Whole-codebase review harness |
+| [feature-impact-sweep](https://github.com/Jayant2907/feature-impact-sweep) | Cross-cutting impact harness |
+| [j-QA](https://github.com/Jayant2907/j-QA) | Manual UI QA harness |
+| [j-user-readiness](https://github.com/Jayant2907/j-user-readiness) | Visual demo-readiness harness |
+| [j-module-audit](https://github.com/Jayant2907/j-module-audit) | Field-level module audit harness |
